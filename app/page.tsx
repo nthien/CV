@@ -4,6 +4,17 @@ import { useState, useEffect, useRef } from 'react'
 import Image from 'next/image'
 
 const basePath = process.env.NEXT_PUBLIC_BASE_PATH || '/CV'
+// Helper function to get image path with basePath
+const getImagePath = (imagePath: string) => {
+  // Remove leading slash from imagePath if present
+  const cleanPath = imagePath.startsWith('/') ? imagePath.slice(1) : imagePath
+  // If basePath is empty (custom domain), use root path
+  if (basePath === '' || basePath === undefined) {
+    return `/${cleanPath}`
+  }
+  // Otherwise, combine basePath with image path
+  return `${basePath}/${cleanPath}`
+}
 
 export default function Home() {
   const [command, setCommand] = useState('')
@@ -135,7 +146,7 @@ export default function Home() {
           <div className="profile-title">DevOps Manager | DevSecOps & Platform Architect</div>
           <div className="profile-image">
             <Image
-              src={`${basePath}/hien.jpg`}
+              src={getImagePath('hien.jpg')}
               alt="Hiển Nguyễn"
               width={120}
               height={120}
