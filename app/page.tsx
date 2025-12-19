@@ -284,10 +284,37 @@ export default function Home() {
             <h2 className="skills-title">PROFESSIONAL SUMMARY</h2>
             <div className="professional-summary">
               <div className="summary-line">
-                DevOps Manager with 10+ years of experience leading secure, scalable platforms across
-                cloud and on-prem environments, specializing in DevSecOps governance, Kubernetes
-                platforms, Anycast-based security, and enterprise identity & compliance.
+                DevOps Manager with 10+ years leading high-performing teams and driving platform
+                transformation at scale. Proven track record of building secure, reliable infrastructure
+                supporting millions of users while reducing costs and improving delivery velocity.
+                Specialized in DevSecOps governance, Kubernetes platforms, and Zero Trust security.
               </div>
+            </div>
+          </section>
+
+          {/* Key Achievements Section */}
+          <section className="welcome-section" style={{ marginTop: '2rem' }}>
+            <h2 className="skills-title">KEY ACHIEVEMENTS</h2>
+            <div className="professional-summary">
+              <ul style={{ 
+                listStyle: 'none', 
+                padding: 0, 
+                margin: 0,
+                color: 'var(--terminal-text)'
+              }}>
+                <li style={{ marginBottom: '0.8rem' }}>
+                  • Built DevOps practice from ground up, scaling team 3→8 engineers
+                </li>
+                <li style={{ marginBottom: '0.8rem' }}>
+                  • Achieved 99.95% uptime across mission-critical platforms
+                </li>
+                <li style={{ marginBottom: '0.8rem' }}>
+                  • Reduced deployment cycle time by 75% through GitOps adoption
+                </li>
+                <li style={{ marginBottom: '0.8rem' }}>
+                  • Led ISO 27001 & SOC 2 compliance for infrastructure layer
+                </li>
+              </ul>
             </div>
           </section>
 
@@ -618,6 +645,12 @@ export default function Home() {
                     internet-facing enterprise applications at scale
                   </li>
                   <li>
+                    Protected 100+ applications handling 50M+ requests/day
+                  </li>
+                  <li>
+                    Reduced security incident response time by 70%
+                  </li>
+                  <li>
                     Owned the end-to-end architecture of a multi-node, multi-region Anycast WAF
                     platform designed to protect high-traffic, internet-facing applications
                   </li>
@@ -643,6 +676,12 @@ export default function Home() {
                   <li>
                     Led enterprise-wide migration of email and collaboration services from Google
                     Workspace to Microsoft 365 with minimal business disruption
+                  </li>
+                  <li>
+                    Migrated 5,000+ users with 99.8% success rate
+                  </li>
+                  <li>
+                    Zero business disruption during cutover weekend
                   </li>
                   <li>
                     Owned identity architecture design using Microsoft Entra ID synchronized with
