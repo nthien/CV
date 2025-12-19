@@ -2,13 +2,15 @@ export default function PDFPage() {
   return (
     <div style={{ 
       fontFamily: 'Arial, Helvetica, sans-serif',
-      maxWidth: '210mm',
+      width: '210mm',
+      minHeight: '297mm',
       margin: '0 auto',
       padding: '15mm',
       backgroundColor: '#ffffff',
       color: '#000000',
       lineHeight: '1.5',
-      fontSize: '11px'
+      fontSize: '11px',
+      boxSizing: 'border-box'
     }}>
       {/* Header */}
       <div style={{ 
