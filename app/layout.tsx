@@ -2,8 +2,8 @@ import type { Metadata } from 'next'
 import './globals.css'
 
 export const metadata: Metadata = {
-  title: 'Hiển Nguyễn - Cloud Architect & Lead DevOps Engineer',
-  description: 'Cloud Architect and Lead DevOps Engineer with over 10 years of experience designing and optimizing distributed systems.',
+  title: 'Hiển Nguyễn - DevOps Manager | DevSecOps & Platform Architect',
+  description: 'DevOps Manager and Platform Architect with 10+ years of experience designing, operating, and governing secure, highly available, large-scale infrastructure platforms.',
 }
 
 export default function RootLayout({
