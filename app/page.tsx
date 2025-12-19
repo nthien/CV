@@ -1,6 +1,7 @@
 'use client'
 
 import { useState, useEffect, useRef } from 'react'
+import Image from 'next/image'
 
 export default function Home() {
   const [command, setCommand] = useState('')
@@ -121,7 +122,16 @@ export default function Home() {
             <span className="status-indicator"></span>
           </div>
           <div className="profile-title">DevOps Manager | DevSecOps & Platform Architect</div>
-          <div className="profile-image">HN</div>
+          <div className="profile-image">
+            <Image
+              src="/hien.jpg"
+              alt="Hiển Nguyễn"
+              className="profile-image-photo"
+              width={120}
+              height={120}
+              priority
+            />
+          </div>
         </div>
 
         <nav>

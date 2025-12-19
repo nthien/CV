@@ -105,8 +105,14 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 3rem;
-    color: var(--terminal-green);
+    overflow: hidden;
+}
+
+.profile-image-photo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
 }
 
 .nav-menu {
