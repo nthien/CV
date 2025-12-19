@@ -1,16 +1,9 @@
 'use client'
 
 import { useState, useEffect, useRef } from 'react'
+import Image from 'next/image'
 
-// Get basePath from environment or detect from URL
-const getBasePath = () => {
-  if (typeof window !== 'undefined') {
-    const path = window.location.pathname
-    const segments = path.split('/').filter(Boolean)
-    return segments.length > 0 ? `/${segments[0]}` : ''
-  }
-  return process.env.NEXT_PUBLIC_BASE_PATH || '/CV'
-}
+const basePath = process.env.NEXT_PUBLIC_BASE_PATH || '/CV'
 
 export default function Home() {
   const [command, setCommand] = useState('')
@@ -132,23 +125,14 @@ export default function Home() {
           </div>
           <div className="profile-title">DevOps Manager | DevSecOps & Platform Architect</div>
           <div className="profile-image">
-            <img
-              src={`${getBasePath()}/hien.jpg`}
+            <Image
+              src={`${basePath}/hien.jpg`}
               alt="Hiển Nguyễn"
+              width={120}
+              height={120}
               className="profile-image-photo"
-              onError={(e) => {
-                // Fallback nếu không load được
-                const target = e.target as HTMLImageElement
-                target.style.display = 'none'
-                const parent = target.parentElement
-                if (parent && !parent.querySelector('span')) {
-                  const fallback = document.createElement('span')
-                  fallback.style.fontSize = '3rem'
-                  fallback.style.color = 'var(--terminal-green)'
-                  fallback.textContent = 'HN'
-                  parent.appendChild(fallback)
-                }
-              }}
+              priority
+              unoptimized
             />
           </div>
         </div>
