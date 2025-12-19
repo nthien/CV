@@ -1,0 +1,434 @@
+import Navigation from '@/components/Navigation'
+import Animations from '@/components/Animations'
+
+export default function Home() {
+  return (
+    <>
+      <Navigation />
+      <Animations />
+
+      {/* Hero Section */}
+      <section id="home" className="hero">
+        <div className="container">
+          <div className="hero-content">
+            <h1 className="hero-title">
+              <span className="greeting">Hello, I&apos;m</span>
+              <span className="name">Hiền Nguyễn</span>
+            </h1>
+            <p className="hero-subtitle">Cloud Architect | Lead DevOps Engineer</p>
+            <p className="hero-description">
+              Over 10 years of experience designing and optimizing distributed systems,
+              architecting cloud-native infrastructures for IoT, HR, E-commerce, and AI platforms.
+            </p>
+            <div className="hero-buttons">
+              <a href="#contact" className="btn btn-primary">Get in Touch</a>
+              <a href="#projects" className="btn btn-secondary">View Projects</a>
+            </div>
+          </div>
+          <div className="hero-image">
+            <div className="floating-shapes">
+              <div className="shape shape-1"></div>
+              <div className="shape shape-2"></div>
+              <div className="shape shape-3"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* About Section */}
+      <section id="about" className="about">
+        <div className="container">
+          <h2 className="section-title">About</h2>
+          <div className="about-content">
+            <div className="about-text">
+              <p>
+                Accomplished Cloud Architect and Lead DevOps Engineer with over 10 years of
+                experience designing and optimizing high-availability, distributed systems. Expert
+                in AWS, Kubernetes, Kafka, Redis, and PostgreSQL, with a proven track record of
+                architecting scalable cloud-native infrastructures for IoT, HR, E-commerce, and AI
+                platforms.
+              </p>
+              <p>
+                Skilled in leading technical teams, establishing CI/CD pipelines, and driving
+                innovation. Adept at translating business requirements into robust architectures,
+                with a strong focus on performance, security, and observability.
+              </p>
+            </div>
+            <div className="contact-info">
+              <h3>Contact Information</h3>
+              <div className="contact-item">
+                <span className="contact-icon">📧</span>
+                <a href="mailto:nguyentronghiensgu@gmail.com">nguyentronghiensgu@gmail.com</a>
+              </div>
+              <div className="contact-item">
+                <span className="contact-icon">📱</span>
+                <a href="tel:+84932670908">+84 932 670 908</a>
+              </div>
+              <div className="contact-item">
+                <span className="contact-icon">💼</span>
+                <a href="https://www.linkedin.com/in/nguyen-trong-hien-17083488/" target="_blank" rel="noopener noreferrer">LinkedIn Profile</a>
+              </div>
+              <div className="contact-item">
+                <span className="contact-icon">📍</span>
+                <span>Ho Chi Minh City, Vietnam</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Skills Section */}
+      <section id="skills" className="skills">
+        <div className="container">
+          <h2 className="section-title">Key Technical Skills</h2>
+          <div className="skills-grid">
+            <div className="skill-category">
+              <h3>Languages & Frameworks</h3>
+              <div className="skill-tags">
+                <span className="skill-tag">Python</span>
+                <span className="skill-tag">Bash</span>
+              </div>
+            </div>
+            <div className="skill-category">
+              <h3>Microservices & APIs</h3>
+              <div className="skill-tags">
+                <span className="skill-tag">REST</span>
+                <span className="skill-tag">API Gateway</span>
+                <span className="skill-tag">Service Discovery</span>
+              </div>
+            </div>
+            <div className="skill-category">
+              <h3>Event-Driven Architecture</h3>
+              <div className="skill-tags">
+                <span className="skill-tag">Apache Kafka</span>
+                <span className="skill-tag">Amazon SQS</span>
+              </div>
+            </div>
+            <div className="skill-category">
+              <h3>Databases</h3>
+              <div className="skill-tags">
+                <span className="skill-tag">PostgreSQL (HA)</span>
+                <span className="skill-tag">MySQL</span>
+                <span className="skill-tag">Redis</span>
+                <span className="skill-tag">MongoDB</span>
+              </div>
+            </div>
+            <div className="skill-category">
+              <h3>Cloud & DevOps</h3>
+              <div className="skill-tags">
+                <span className="skill-tag">AWS (EKS, ECR, S3, CloudFront, ALB, SES, Lambda, CodePipeline)</span>
+                <span className="skill-tag">VNG Cloud</span>
+                <span className="skill-tag">Docker</span>
+                <span className="skill-tag">Kubernetes (K8s)</span>
+                <span className="skill-tag">ArgoCD</span>
+                <span className="skill-tag">GitLab Runner</span>
+                <span className="skill-tag">Jenkins</span>
+              </div>
+            </div>
+            <div className="skill-category">
+              <h3>Observability</h3>
+              <div className="skill-tags">
+                <span className="skill-tag">Prometheus</span>
+                <span className="skill-tag">Grafana</span>
+                <span className="skill-tag">CloudWatch</span>
+                <span className="skill-tag">Performance Optimization</span>
+              </div>
+            </div>
+            <div className="skill-category">
+              <h3>Security</h3>
+              <div className="skill-tags">
+                <span className="skill-tag">SOX</span>
+                <span className="skill-tag">ISO 27001</span>
+                <span className="skill-tag">Zero Trust</span>
+                <span className="skill-tag">OAuth 2.0</span>
+                <span className="skill-tag">JWT</span>
+                <span className="skill-tag">DDoS Protection</span>
+                <span className="skill-tag">WAF</span>
+              </div>
+            </div>
+            <div className="skill-category">
+              <h3>Networking</h3>
+              <div className="skill-tags">
+                <span className="skill-tag">Anycast DNS</span>
+                <span className="skill-tag">Load Balancing (ALB, Nginx)</span>
+                <span className="skill-tag">Network Security</span>
+              </div>
+            </div>
+            <div className="skill-category">
+              <h3>CI/CD</h3>
+              <div className="skill-tags">
+                <span className="skill-tag">GitLab CI</span>
+                <span className="skill-tag">GitHub Actions</span>
+                <span className="skill-tag">Jenkins</span>
+                <span className="skill-tag">ArgoCD</span>
+                <span className="skill-tag">SonarQube</span>
+                <span className="skill-tag">AWS CodeBuild</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Experience Section */}
+      <section id="experience" className="experience">
+        <div className="container">
+          <h2 className="section-title">Professional Experience</h2>
+          <div className="timeline">
+            <div className="timeline-item">
+              <div className="timeline-marker"></div>
+              <div className="timeline-content">
+                <div className="timeline-header">
+                  <h3>Lead System/DevOps Engineer</h3>
+                  <span className="timeline-company">VNG Corporation</span>
+                  <span className="timeline-date">Jun 2020 - Present</span>
+                </div>
+                <p className="timeline-location">Ho Chi Minh City, Vietnam</p>
+                <ul className="timeline-details">
+                  <li>Led the DevOps team for VNG-DB (GreenNode) and architected infrastructure for all VNG-DB products, achieving 99.9% uptime across high-concurrency workloads</li>
+                  <li>Managed corporate-wide Office 365 cloud operations, implementing Azure AD sync and Zero Trust architecture to secure access for thousands of users</li>
+                  <li>Designed and optimized microservices-based infrastructure using Kubernetes, Kafka, and Redis, enabling scalable data streaming, caching, and real-time processing</li>
+                  <li>Established enterprise-grade CI/CD pipelines with GitLab Runner, ArgoCD, and Jenkins, integrating SonarQube, reducing deployment time by 40%</li>
+                  <li>Built observability stack with Prometheus and Grafana, providing real-time monitoring and performance insights across all VNG-DB products</li>
+                  <li>Supported achieving ISO 27001, SOX, SOC2 certification for VNG-DB products</li>
+                  <li>Lead a team of 8 DevOps engineers, guiding technical designs and fostering a culture of innovation</li>
+                </ul>
+              </div>
+            </div>
+
+            <div className="timeline-item">
+              <div className="timeline-marker"></div>
+              <div className="timeline-content">
+                <div className="timeline-header">
+                  <h3>Senior System/DevOps Engineer, Team Leader</h3>
+                  <span className="timeline-company">VNG Corporation</span>
+                  <span className="timeline-date">Apr 2017 - Jun 2020</span>
+                </div>
+                <p className="timeline-location">Ho Chi Minh City, Vietnam</p>
+                <ul className="timeline-details">
+                  <li>Led a 2-engineer team to manage enterprise IT infrastructure, focusing on high-availability</li>
+                  <li>Architected PostgreSQL HA with Patroni and MySQL multi-master replication, ensuring zero data loss</li>
+                  <li>Containerized HR/IT systems using Docker, improving deployment efficiency and modularity</li>
+                  <li>Designed 200TB enterprise storage (TrueNAS/FreeNAS) with Azure authentication for secure access</li>
+                  <li>Migrated systems from Google Workspace to Office 365, implementing Azure AD sync and Zero Trust architecture</li>
+                  <li>Established CI/CD pipelines, enhancing release cycles by 30%</li>
+                </ul>
+              </div>
+            </div>
+
+            <div className="timeline-item">
+              <div className="timeline-marker"></div>
+              <div className="timeline-content">
+                <div className="timeline-header">
+                  <h3>Senior System Engineer</h3>
+                  <span className="timeline-company">VNG Corporation</span>
+                  <span className="timeline-date">Apr 2015 - Apr 2017</span>
+                </div>
+                <p className="timeline-location">Ho Chi Minh City, Vietnam</p>
+                <ul className="timeline-details">
+                  <li>Developed mail relay and LDAP systems for 2000+ users, ensuring secure communication</li>
+                  <li>Implemented a live streaming system for VNG events, supporting 2000 viewers with Docker</li>
+                  <li>Deployed Guacamole clientless remote desktop gateway, improving access security</li>
+                  <li>Built corporate websites using Docker, ensuring high availability</li>
+                </ul>
+              </div>
+            </div>
+
+            <div className="timeline-item">
+              <div className="timeline-marker"></div>
+              <div className="timeline-content">
+                <div className="timeline-header">
+                  <h3>System Administrator</h3>
+                  <span className="timeline-company">VNG Corporation</span>
+                  <span className="timeline-date">Apr 2014 - Apr 2015</span>
+                </div>
+                <p className="timeline-location">Ho Chi Minh City, Vietnam</p>
+                <ul className="timeline-details">
+                  <li>Implemented HR systems using Odoo, streamlining employee management</li>
+                  <li>Developed CI/CD pipelines, reducing manual deployment by 50%</li>
+                </ul>
+              </div>
+            </div>
+
+            <div className="timeline-item">
+              <div className="timeline-marker"></div>
+              <div className="timeline-content">
+                <div className="timeline-header">
+                  <h3>System Administrator</h3>
+                  <span className="timeline-company">Yeu The Thao.com</span>
+                  <span className="timeline-date">Aug 2012 - Jan 2014</span>
+                </div>
+                <p className="timeline-location">Ho Chi Minh City, Vietnam</p>
+                <ul className="timeline-details">
+                  <li>Built high-traffic website infrastructure for 1000+ CCU using Nginx and Linux servers</li>
+                  <li>Implemented DDoS protection with iptables, Nginx modules, and fail2ban</li>
+                  <li>Managed on-premises mail and Active Directory for 100 employees</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Projects Section */}
+      <section id="projects" className="projects">
+        <div className="container">
+          <h2 className="section-title">Notable Projects</h2>
+          <div className="projects-grid">
+            <div className="project-card">
+              <div className="project-header">
+                <h3>Cloudverse Platform (100% AWS)</h3>
+                <span className="project-role">Lead DevOps/Architect</span>
+              </div>
+              <p className="project-tech">AWS (EKS, S3, ALB, Lambda, RDS, ElastiCache, CloudWatch), Kubernetes, Kafka, Redis</p>
+              <ul className="project-details">
+                <li>Architected a scalable, microservices-driven platform on AWS, using EKS for container orchestration and S3 for storage</li>
+                <li>Designed event-driven workflows with Kafka and Lambda for real-time data processing</li>
+                <li>Implemented CI/CD pipelines with AWS CodePipeline and CodeBuild, achieving 50% faster deployments</li>
+                <li>Optimized performance with Redis caching and RDS (PostgreSQL), reducing latency by 30%</li>
+                <li>Ensured 99.95% uptime via ALB load balancing, auto-scaling, and CloudWatch monitoring</li>
+              </ul>
+            </div>
+
+            <div className="project-card">
+              <div className="project-header">
+                <h3>Kubernetes-Based IoT Platform</h3>
+                <span className="project-role">Lead Architect</span>
+              </div>
+              <p className="project-tech">Kubernetes, Message Queue (ActiveMQ, Mosquitto), Redis, PostgreSQL</p>
+              <ul className="project-details">
+                <li>Designed a scalable IoT platform with microservices, processing real-time data for thousands of devices</li>
+                <li>Implemented message queue architecture for reliable device communication</li>
+                <li>Achieved 99.9% uptime through robust monitoring and auto-scaling</li>
+              </ul>
+            </div>
+
+            <div className="project-card">
+              <div className="project-header">
+                <h3>Veka (vcloudcam) Infrastructure</h3>
+                <span className="project-role">Lead DevOps Engineer</span>
+              </div>
+              <p className="project-tech">Kubernetes, S3, Load Balancing, RTMP Streaming, Gitlab Runner (CI/CD)</p>
+              <ul className="project-details">
+                <li>Architected Kubernetes infrastructure for a cloud camera system, integrating storage and streaming</li>
+                <li>Implemented RTMP streaming capabilities with load balancing for high availability</li>
+                <li>Configured GitLab Runner for automated CI/CD workflows</li>
+              </ul>
+            </div>
+
+            <div className="project-card">
+              <div className="project-header">
+                <h3>OCR/AI Platform</h3>
+                <span className="project-role">Lead DevOps</span>
+              </div>
+              <p className="project-tech">Kubernetes, Redis, Message Queue, OCR AI Model, Minio, Jenkins, GitLab</p>
+              <ul className="project-details">
+                <li>Designed, built, and deployed Kubernetes infrastructure for OCR and AI model deployment, optimizing performance for high-throughput processing</li>
+                <li>Implemented CI/CD pipelines with Jenkins and GitLab, automating AI model updates and reducing deployment time by 30%</li>
+                <li>Configured Minio for scalable object storage and Message Queues for efficient data pipelines, enhancing OCR processing reliability</li>
+                <li>Ensured 99.9% uptime and scalability through Prometheus-based monitoring and auto-scaling configurations</li>
+              </ul>
+            </div>
+
+            <div className="project-card">
+              <div className="project-header">
+                <h3>Dcorp (F&B) Infrastructure (Freelance)</h3>
+                <span className="project-role">Architect/DevOps</span>
+              </div>
+              <p className="project-tech">Kubernetes, APISIX, Keycloak, MySQL, PostgreSQL, GitLab Runner, Kafka, Redis</p>
+              <ul className="project-details">
+                <li>Consulted, designed, and deployed Kubernetes-based infrastructure for F&B operations, integrating APISIX for API gateway and Keycloak for secure authentication</li>
+                <li>Built CI/CD pipelines using GitLab Runner, automating deployments and reducing release cycles by 35%</li>
+                <li>Architected high-availability MySQL and PostgreSQL clusters, ensuring zero data loss and seamless scalability</li>
+                <li>Implemented Kafka for real-time event streaming and Redis for caching, optimizing system performance by 25%</li>
+                <li>Ensured 99.9% uptime through robust monitoring and auto-scaling configurations</li>
+              </ul>
+            </div>
+
+            <div className="project-card">
+              <div className="project-header">
+                <h3>Payment System for U.S. Nails Chain (Freelance)</h3>
+                <span className="project-role">Architect/DevOps</span>
+              </div>
+              <p className="project-tech">AWS (EKS, ECR, ALB), Kubernetes, Kafka, Redis, PostgreSQL, GitHub Actions, Grafana Tempo</p>
+              <ul className="project-details">
+                <li>Architected and deployed a 100% AWS-based payment system using EKS for container orchestration, ensuring high availability and scalability for a U.S. retail chain</li>
+                <li>Implemented CI/CD pipelines with GitHub Actions, automating deployments and reducing release cycles by 40%</li>
+                <li>Designed event-driven architecture with Kafka for real-time transaction processing and Redis for caching, improving performance by 30%</li>
+                <li>Configured PostgreSQL clusters for secure data management and Grafana Tempo for distributed tracing, enhancing system observability</li>
+                <li>Achieved 99.95% uptime through ALB load balancing and auto-scaling configurations</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Education & Certifications */}
+      <section id="education" className="education">
+        <div className="container">
+          <h2 className="section-title">Education & Certifications</h2>
+          <div className="education-grid">
+            <div className="education-card">
+              <h3>🎓 Education</h3>
+              <div className="education-item">
+                <h4>Bachelor&apos;s Degree in Systems Engineering</h4>
+                <p className="education-school">Sai Gon University</p>
+                <p className="education-period">2008 - 2012</p>
+                <p className="education-location">Ho Chi Minh City, Vietnam</p>
+              </div>
+            </div>
+            <div className="education-card">
+              <h3>🏆 Certifications</h3>
+              <div className="education-item">
+                <h4>AWS Certified Solutions Architect - Associate</h4>
+                <a href="https://www.credly.com/badges/af54d66f-028e-4d7f-af9a-d78703ae970c" target="_blank" rel="noopener noreferrer" className="cert-link">
+                  View Certification →
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Contact Section */}
+      <section id="contact" className="contact">
+        <div className="container">
+          <h2 className="section-title">Contact</h2>
+          <div className="contact-content">
+            <p className="contact-intro">Feel free to reach out if you&apos;d like to discuss collaboration opportunities or interesting projects!</p>
+            <div className="contact-grid">
+              <a href="mailto:nguyentronghiensgu@gmail.com" className="contact-card">
+                <div className="contact-card-icon">📧</div>
+                <h3>Email</h3>
+                <p>nguyentronghiensgu@gmail.com</p>
+              </a>
+              <a href="tel:+84932670908" className="contact-card">
+                <div className="contact-card-icon">📱</div>
+                <h3>Mobile</h3>
+                <p>+84 932 670 908</p>
+              </a>
+              <a href="https://www.linkedin.com/in/nguyen-trong-hien-17083488/" target="_blank" rel="noopener noreferrer" className="contact-card">
+                <div className="contact-card-icon">💼</div>
+                <h3>LinkedIn</h3>
+                <p>Connect with me</p>
+              </a>
+              <div className="contact-card">
+                <div className="contact-card-icon">📍</div>
+                <h3>Location</h3>
+                <p>Ho Chi Minh City, Vietnam</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Footer */}
+      <footer className="footer">
+        <div className="container">
+          <p>&copy; 2024 Hiền Nguyễn. All rights reserved.</p>
+          <p className="footer-note">Cloud Architect & Lead DevOps Engineer</p>
+        </div>
+      </footer>
+    </>
+  )
+}
+
