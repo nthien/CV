@@ -1,4 +1,4 @@
-# GitHub Pages Deployment Guide
+## GitHub Pages Deployment Guide
 
 ## Custom Domain Setup
 
