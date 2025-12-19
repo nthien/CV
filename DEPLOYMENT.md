@@ -8,7 +8,7 @@ Nếu bạn sử dụng custom domain (ví dụ: `cv.hiennguyen.tech`), bạn c�
 
 1. **Thêm secret trong GitHub repository:**
    - Vào Settings → Secrets and variables → Actions
-   - Thêm secret mới: `NEXT_PUBLIC_BASE_PATH` với giá trị là `''` (empty string)
+   - Thêm secret mới: `USE_CUSTOM_DOMAIN` với giá trị là `true`
 
 2. **Cấu hình custom domain trong GitHub Pages:**
    - Vào Settings → Pages

@@ -1,12 +1,26 @@
 /** @type {import('next').NextConfig} */
 const isProd = process.env.NODE_ENV === 'production'
 // Auto-detect from environment variable, or use hardcoded value
-// For custom domain: set NEXT_PUBLIC_BASE_PATH='' (empty string) in GitHub Actions secrets
+// For custom domain: set USE_CUSTOM_DOMAIN=true in GitHub Actions secrets
 // For GitHub Pages subpath: set NEXT_PUBLIC_BASE_PATH='/repo-name' or leave empty to use default
 // Default: '/CV' for GitHub Pages subpath
-const repoName = process.env.NEXT_PUBLIC_BASE_PATH !== undefined 
-  ? process.env.NEXT_PUBLIC_BASE_PATH 
-  : '/CV'
+const useCustomDomain = process.env.USE_CUSTOM_DOMAIN === 'true'
+const basePathFromEnv = process.env.NEXT_PUBLIC_BASE_PATH
+
+let repoName = '/CV' // default
+
+if (useCustomDomain) {
+  // Custom domain: use root path
+  repoName = ''
+} else if (basePathFromEnv !== undefined && basePathFromEnv !== '') {
+  // Validate: basePath must start with / or be empty
+  if (basePathFromEnv.startsWith('/') || basePathFromEnv === '') {
+    repoName = basePathFromEnv
+  } else {
+    console.warn(`Invalid basePath: ${basePathFromEnv}. Must start with '/' or be empty. Using default '/CV'`)
+    repoName = '/CV'
+  }
+}
 
 const nextConfig = {
   output: 'export',
