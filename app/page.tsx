@@ -124,7 +124,7 @@ export default function Home() {
           <div className="profile-title">DevOps Manager | DevSecOps & Platform Architect</div>
           <div className="profile-image">
             <Image
-              src="/hien.jpg"
+              src="/public/hien.jpg"
               alt="Hiển Nguyễn"
               className="profile-image-photo"
               width={120}
