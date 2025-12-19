@@ -7,6 +7,8 @@
     "build": "next build",
     "start": "next start",
     "export": "next build",
+    "pdf": "node scripts/generate-pdf.js",
+    "build:pdf": "npm run build && npm run pdf",
     "deploy": "npm run build && touch out/.nojekyll && git add out/ && git commit -m 'Deploy to GitHub Pages' && git subtree push --prefix out origin gh-pages"
   },
   "dependencies": {
@@ -18,7 +20,7 @@
     "@types/node": "^20.11.0",
     "@types/react": "^18.2.0",
     "@types/react-dom": "^18.2.0",
+    "puppeteer": "^21.11.0",
     "typescript": "^5.3.0"
   }
 }
-
