@@ -295,137 +295,105 @@ export default function Home() {
           <section id="skills" className="skills-section">
             <h2 className="skills-title">CORE COMPETENCIES</h2>
 
-            <div style={{ marginBottom: '2rem' }}>
-              <h3 style={{ color: 'var(--terminal-green-bright)', marginBottom: '1rem', fontSize: '1.1rem' }}>
-                DevSecOps & Platform Engineering
+            {/* PRIMARY - Nổi bật, box to hơn, đậm hơn */}
+            <div style={{ marginBottom: '3rem' }}>
+              <h3 style={{ 
+                color: 'var(--terminal-green-bright)', 
+                marginBottom: '1.5rem', 
+                fontSize: '1.3rem',
+                fontWeight: 'bold'
+              }}>
+                PRIMARY
               </h3>
-              <div className="skills-grid">
-                <div className="skill-item">
-                  <div className="skill-name">DevSecOps Strategy & Governance</div>
-                  <div className="skill-bar-container">
-                    <div className="skill-bar" style={{ width: '95%' }}></div>
+              <div className="skills-grid" style={{ gridTemplateColumns: 'repeat(2, 1fr)', gap: '1.5rem' }}>
+                <div className="skill-item" style={{ 
+                  padding: '1.5rem',
+                  border: '2px solid var(--terminal-green-bright)',
+                  borderRadius: '8px',
+                  backgroundColor: 'rgba(0, 255, 0, 0.05)'
+                }}>
+                  <div className="skill-name" style={{ 
+                    fontSize: '1.1rem',
+                    fontWeight: 'bold',
+                    marginBottom: '0.5rem'
+                  }}>
+                    DevSecOps Strategy & Governance
                   </div>
                 </div>
-                <div className="skill-item">
-                  <div className="skill-name">Secure-by-Design CI/CD & GitOps</div>
-                  <div className="skill-bar-container">
-                    <div className="skill-bar" style={{ width: '98%' }}></div>
+                <div className="skill-item" style={{ 
+                  padding: '1.5rem',
+                  border: '2px solid var(--terminal-green-bright)',
+                  borderRadius: '8px',
+                  backgroundColor: 'rgba(0, 255, 0, 0.05)'
+                }}>
+                  <div className="skill-name" style={{ 
+                    fontSize: '1.1rem',
+                    fontWeight: 'bold',
+                    marginBottom: '0.5rem'
+                  }}>
+                    Platform Engineering (Kubernetes)
                   </div>
                 </div>
-                <div className="skill-item">
-                  <div className="skill-name">Platform Guardrails & Policy Enforcement</div>
-                  <div className="skill-bar-container">
-                    <div className="skill-bar" style={{ width: '92%' }}></div>
+                <div className="skill-item" style={{ 
+                  padding: '1.5rem',
+                  border: '2px solid var(--terminal-green-bright)',
+                  borderRadius: '8px',
+                  backgroundColor: 'rgba(0, 255, 0, 0.05)'
+                }}>
+                  <div className="skill-name" style={{ 
+                    fontSize: '1.1rem',
+                    fontWeight: 'bold',
+                    marginBottom: '0.5rem'
+                  }}>
+                    Anycast Networking & Application Security
                   </div>
                 </div>
-                <div className="skill-item">
-                  <div className="skill-name">Release Governance & Audit Readiness</div>
-                  <div className="skill-bar-container">
-                    <div className="skill-bar" style={{ width: '90%' }}></div>
+                <div className="skill-item" style={{ 
+                  padding: '1.5rem',
+                  border: '2px solid var(--terminal-green-bright)',
+                  borderRadius: '8px',
+                  backgroundColor: 'rgba(0, 255, 0, 0.05)'
+                }}>
+                  <div className="skill-name" style={{ 
+                    fontSize: '1.1rem',
+                    fontWeight: 'bold',
+                    marginBottom: '0.5rem'
+                  }}>
+                    Cloud & Identity Security (Zero Trust)
                   </div>
                 </div>
               </div>
             </div>
 
-            <div style={{ marginBottom: '2rem' }}>
-              <h3 style={{ color: 'var(--terminal-green-bright)', marginBottom: '1rem', fontSize: '1.1rem' }}>
-                Kubernetes Platform Engineering
+            {/* SECONDARY - Nhỏ hơn, phía dưới */}
+            <div style={{ marginBottom: '2rem', marginTop: '3rem', paddingTop: '2rem', borderTop: '1px solid var(--terminal-border)' }}>
+              <h3 style={{ 
+                color: 'var(--terminal-green)', 
+                marginBottom: '1rem', 
+                fontSize: '1rem',
+                opacity: 0.8
+              }}>
+                SECONDARY
               </h3>
-              <div className="skills-grid">
-                <div className="skill-item">
-                  <div className="skill-name">Platform Architecture & Governance</div>
-                  <div className="skill-bar-container">
-                    <div className="skill-bar" style={{ width: '98%' }}></div>
+              <div className="skills-grid" style={{ gridTemplateColumns: 'repeat(2, 1fr)', gap: '1rem' }}>
+                <div className="skill-item" style={{ padding: '1rem' }}>
+                  <div className="skill-name" style={{ fontSize: '0.95rem' }}>
+                    CI/CD & GitOps
                   </div>
                 </div>
-                <div className="skill-item">
-                  <div className="skill-name">Multi-Cloud & On-Prem Platform Strategy</div>
-                  <div className="skill-bar-container">
-                    <div className="skill-bar" style={{ width: '95%' }}></div>
+                <div className="skill-item" style={{ padding: '1rem' }}>
+                  <div className="skill-name" style={{ fontSize: '0.95rem' }}>
+                    Observability & Reliability Engineering
                   </div>
                 </div>
-                <div className="skill-item">
-                  <div className="skill-name">Container Orchestration & Workload Management</div>
-                  <div className="skill-bar-container">
-                    <div className="skill-bar" style={{ width: '95%' }}></div>
+                <div className="skill-item" style={{ padding: '1rem' }}>
+                  <div className="skill-name" style={{ fontSize: '0.95rem' }}>
+                    Distributed Systems Architecture
                   </div>
                 </div>
-              </div>
-            </div>
-
-            <div style={{ marginBottom: '2rem' }}>
-              <h3 style={{ color: 'var(--terminal-green-bright)', marginBottom: '1rem', fontSize: '1.1rem' }}>
-                Anycast Networking & Application Security
-              </h3>
-              <div className="skills-grid">
-                <div className="skill-item">
-                  <div className="skill-name">Anycast Architecture & Global Traffic Management</div>
-                  <div className="skill-bar-container">
-                    <div className="skill-bar" style={{ width: '95%' }}></div>
-                  </div>
-                </div>
-                <div className="skill-item">
-                  <div className="skill-name">WAF & DDoS Protection Strategy</div>
-                  <div className="skill-bar-container">
-                    <div className="skill-bar" style={{ width: '93%' }}></div>
-                  </div>
-                </div>
-                <div className="skill-item">
-                  <div className="skill-name">Application Security & Threat Mitigation</div>
-                  <div className="skill-bar-container">
-                    <div className="skill-bar" style={{ width: '92%' }}></div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div style={{ marginBottom: '2rem' }}>
-              <h3 style={{ color: 'var(--terminal-green-bright)', marginBottom: '1rem', fontSize: '1.1rem' }}>
-                Cloud & Identity Security (Zero Trust)
-              </h3>
-              <div className="skills-grid">
-                <div className="skill-item">
-                  <div className="skill-name">Enterprise Identity & Access Governance</div>
-                  <div className="skill-bar-container">
-                    <div className="skill-bar" style={{ width: '90%' }}></div>
-                  </div>
-                </div>
-                <div className="skill-item">
-                  <div className="skill-name">Zero Trust Architecture & Policy Enforcement</div>
-                  <div className="skill-bar-container">
-                    <div className="skill-bar" style={{ width: '90%' }}></div>
-                  </div>
-                </div>
-                <div className="skill-item">
-                  <div className="skill-name">Cloud Security Posture & Compliance</div>
-                  <div className="skill-bar-container">
-                    <div className="skill-bar" style={{ width: '88%' }}></div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div style={{ marginBottom: '2rem' }}>
-              <h3 style={{ color: 'var(--terminal-green-bright)', marginBottom: '1rem', fontSize: '1.1rem' }}>
-                Observability & Reliability Engineering
-              </h3>
-              <div className="skills-grid">
-                <div className="skill-item">
-                  <div className="skill-name">SLO / SLA Management & Service Reliability</div>
-                  <div className="skill-bar-container">
-                    <div className="skill-bar" style={{ width: '95%' }}></div>
-                  </div>
-                </div>
-                <div className="skill-item">
-                  <div className="skill-name">Performance & Capacity Planning</div>
-                  <div className="skill-bar-container">
-                    <div className="skill-bar" style={{ width: '88%' }}></div>
-                  </div>
-                </div>
-                <div className="skill-item">
-                  <div className="skill-name">Distributed Systems Observability</div>
-                  <div className="skill-bar-container">
-                    <div className="skill-bar" style={{ width: '90%' }}></div>
+                <div className="skill-item" style={{ padding: '1rem' }}>
+                  <div className="skill-name" style={{ fontSize: '0.95rem' }}>
+                    Compliance & Audit Readiness
                   </div>
                 </div>
               </div>
@@ -494,8 +462,24 @@ export default function Home() {
                       perspectives.
                     </li>
                     <li>
-                      Led and mentored a DevOps team of 8 engineers, fostering a shared-responsibility
-                      DevSecOps culture across engineering teams.
+                      Built and mentored a DevOps team of 8 engineers, establishing shared DevSecOps
+                      standards and reducing dependency on individual expertise.
+                    </li>
+                    <li>
+                      Drove cross-team adoption of platform and security standards, improving delivery
+                      consistency and reducing ad-hoc operational work.
+                    </li>
+                    <li>
+                      Delivered platform capabilities that reduced operational risk and enabled scalable
+                      growth for multiple business units.
+                    </li>
+                    <li>
+                      Acted as a technical advisor for infrastructure and security vendor evaluation and
+                      cost-related decisions.
+                    </li>
+                    <li>
+                      Participated in capacity planning and infrastructure cost governance across cloud
+                      and on-prem environments.
                     </li>
                     <li>
                       Oversaw enterprise identity and access management (Office 365, Azure AD / Entra
