@@ -45,7 +45,7 @@ export default function Animations() {
     // Console message
     console.log('%c👋 Hello!', 'font-size: 20px; font-weight: bold; color: #6366f1;')
     console.log(
-      '%cWebsite created by Hiền Nguyễn - Cloud Architect & Lead DevOps Engineer',
+      '%cWebsite created by Hiển Nguyễn - Cloud Architect & Lead DevOps Engineer',
       'color: #6b7280;'
     )
 

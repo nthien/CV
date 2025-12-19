@@ -13,7 +13,7 @@ export default function Home() {
           <div className="hero-content">
             <h1 className="hero-title">
               <span className="greeting">Hello, I&apos;m</span>
-              <span className="name">Hiền Nguyễn</span>
+              <span className="name">Hiển Nguyễn</span>
             </h1>
             <p className="hero-subtitle">Cloud Architect | Lead DevOps Engineer</p>
             <p className="hero-description">
@@ -424,7 +424,7 @@ export default function Home() {
       {/* Footer */}
       <footer className="footer">
         <div className="container">
-          <p>&copy; 2024 Hiền Nguyễn. All rights reserved.</p>
+          <p>&copy; 2024 Hiển Nguyễn. All rights reserved.</p>
           <p className="footer-note">Cloud Architect & Lead DevOps Engineer</p>
         </div>
       </footer>

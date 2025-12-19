@@ -1,4 +1,4 @@
-# Personal Branding Website - Hiền Nguyễn
+# Personal Branding Website - Hiển Nguyễn
 
 A modern personal branding website built with Next.js, showcasing professional experience, skills, and projects.
 
@@ -84,4 +84,4 @@ The static files will be exported to the `out/` directory, ready for deployment.
 
 ## License
 
-© 2024 Hiền Nguyễn. All rights reserved.
+© 2024 Hiển Nguyễn. All rights reserved.

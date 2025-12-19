@@ -30,7 +30,16 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
+      - name: Get repository name
+        id: repo
+        run: |
+          REPO_NAME=$(echo "${{ github.repository }}" | cut -d'/' -f2)
+          echo "name=$REPO_NAME" >> $GITHUB_OUTPUT
+          echo "Repository name: $REPO_NAME"
+
       - name: Build
+        env:
+          NEXT_PUBLIC_BASE_PATH: /${{ steps.repo.outputs.name }}
         run: npm run build
 
       - name: Create .nojekyll file
