@@ -45,13 +45,24 @@ export default function Home() {
     } else if (trimmedCmd === 'contact') {
       document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })
       setCurrentSection('contact')
+    } else if (trimmedCmd === 'certifications') {
+      document.getElementById('education')?.scrollIntoView({ behavior: 'smooth' })
+      setCurrentSection('education')
+    } else if (trimmedCmd === 'stats') {
+      setCommandHistory([
+        ...commandHistory,
+        `$ ${cmd}`,
+        'GitHub stats feature coming soon!',
+      ])
+      setCommand('')
+      return
     } else if (trimmedCmd === 'clear') {
       setCommandHistory([])
     } else if (trimmedCmd === 'ls') {
       setCommandHistory([
         ...commandHistory,
         `$ ${cmd}`,
-        'projects/  repositories/  about.txt  skills.txt  experience/  certifications/  stats/',
+        'projects/  repositories/  about.txt  skills.txt  experience/  certifications/',
       ])
       setCommand('')
       return
@@ -59,7 +70,7 @@ export default function Home() {
       setCommandHistory([
         ...commandHistory,
         `$ ${cmd}`,
-        'Available commands: ls, whoami, skills, contact, clear, projects, about, experience, certifications, stats',
+        'Available commands: ls, whoami, skills, contact, clear, projects, about, experience, certifications',
       ])
       setCommand('')
       return
@@ -89,8 +100,6 @@ export default function Home() {
         return 'Opening projects section...'
       case 'contact':
         return 'Opening contact section...'
-      case 'stats':
-        return 'Opening GitHub stats section...'
       case 'certifications':
         return 'Opening certifications section...'
       default:
