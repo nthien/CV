@@ -42,7 +42,7 @@ jobs:
           # For custom domain: Add secret USE_CUSTOM_DOMAIN with value 'true'
           # For GitHub Pages subpath: Add secret NEXT_PUBLIC_BASE_PATH='/repo-name' or leave empty (will use /CV)
           USE_CUSTOM_DOMAIN: ${{ secrets.USE_CUSTOM_DOMAIN || 'false' }}
-          NEXT_PUBLIC_BASE_PATH: ${{ secrets.NEXT_PUBLIC_BASE_PATH && secrets.NEXT_PUBLIC_BASE_PATH || format('/{0}', steps.repo.outputs.name) }}
+          NEXT_PUBLIC_BASE_PATH: ${{ secrets.USE_CUSTOM_DOMAIN == 'true' && '' || (secrets.NEXT_PUBLIC_BASE_PATH && secrets.NEXT_PUBLIC_BASE_PATH || format('/{0}', steps.repo.outputs.name)) }}
         run: npm run build
 
       - name: Create .nojekyll file

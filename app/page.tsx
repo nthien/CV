@@ -3,7 +3,12 @@
 import { useState, useEffect, useRef } from 'react'
 import Image from 'next/image'
 
-const basePath = process.env.NEXT_PUBLIC_BASE_PATH || '/CV'
+// Get basePath from environment, default to '/CV' if not set
+// Empty string means custom domain (root path)
+const basePath = process.env.NEXT_PUBLIC_BASE_PATH !== undefined 
+  ? process.env.NEXT_PUBLIC_BASE_PATH 
+  : '/CV'
+
 // Helper function to get image path with basePath
 const getImagePath = (imagePath: string) => {
   // Remove leading slash from imagePath if present
