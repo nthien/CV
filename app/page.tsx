@@ -509,10 +509,6 @@ export default function Home() {
                       growth for multiple business units.
                     </li>
                     <li>
-                      Acted as a technical advisor for infrastructure and security vendor evaluation and
-                      cost-related decisions.
-                    </li>
-                    <li>
                       Participated in capacity planning and infrastructure cost governance across cloud
                       and on-prem environments.
                     </li>
@@ -555,7 +551,7 @@ export default function Home() {
                       control and authentication standards.
                     </li>
                     <li>
-                      Led collaboration platform migration (Google Workspace → Office 365),
+                      Executed collaboration platform migration (Google Workspace → Office 365),
                       implementing Azure AD synchronization and Zero Trust access models.
                     </li>
                   </ul>
