@@ -228,6 +228,14 @@ export default function Home() {
           <button className="action-btn" onClick={copyEmail}>
             Copy Email
           </button>
+          <a
+            href={getImagePath('HienNguyen_DevSecOps_CV.pdf')}
+            download="HienNguyen_DevSecOps_CV.pdf"
+            className="action-btn"
+            style={{ textDecoration: 'none', display: 'block', textAlign: 'center' }}
+          >
+            Download PDF CV
+          </a>
         </div>
       </aside>
 
