@@ -442,7 +442,7 @@ export default function Home() {
                 <div className="timeline-marker"></div>
                 <div className="timeline-content">
                   <div className="timeline-header">
-                    <div className="timeline-role">DevOps Manager / Lead System Engineer</div>
+                    <div className="timeline-role">DevOps Manager</div>
                     <div className="timeline-company">VNG Corporation – Ho Chi Minh City, Vietnam</div>
                     <div className="timeline-date">Jun 2020 – Present</div>
                   </div>
@@ -511,16 +511,16 @@ export default function Home() {
                       workloads.
                     </li>
                     <li>
-                      Containerized enterprise systems using standardized, security-hardened images
-                      and deployment pipelines.
+                      Established containerization standards and security-hardened image governance
+                      for enterprise systems.
                     </li>
                     <li>
-                      Built CI/CD pipelines with integrated quality and security checks, improving
+                      Owned CI/CD standards with integrated quality and security gates, improving
                       delivery confidence and traceability.
                     </li>
                     <li>
-                      Designed and managed large-scale enterprise storage systems with strong access
-                      control and authentication.
+                      Governed large-scale enterprise storage architecture with strong access
+                      control and authentication standards.
                     </li>
                     <li>
                       Led collaboration platform migration (Google Workspace → Office 365),
@@ -540,19 +540,20 @@ export default function Home() {
                   </div>
                   <ul className="timeline-details">
                     <li>
-                      Built and operated secure enterprise infrastructure services, including mail
+                      Owned secure enterprise infrastructure services architecture, including mail
                       relay, directory services, and remote access platforms.
                     </li>
                     <li>
-                      Implemented security-focused system architectures for internal communication and
+                      Defined security-focused system architectures for internal communication and
                       identity management.
                     </li>
                     <li>
-                      Designed containerized environments for internal services, improving isolation
+                      Established containerization standards for internal services, improving isolation
                       and reliability.
                     </li>
                     <li>
-                      Delivered high-availability streaming and web platforms for corporate use cases.
+                      Owned high-availability platform architecture for streaming and web services
+                      supporting corporate use cases.
                     </li>
                   </ul>
                 </div>
@@ -568,12 +569,12 @@ export default function Home() {
                   </div>
                   <ul className="timeline-details">
                     <li>
-                      Operated and secured enterprise IT systems with a focus on stability, access
-                      control, and operational automation.
+                      Owned enterprise IT systems governance with a focus on stability, access
+                      control, and operational automation standards.
                     </li>
                     <li>
-                      Supported internal platforms through standardized deployment and maintenance
-                      procedures.
+                      Established standardized deployment and maintenance procedures for internal
+                      platforms.
                     </li>
                   </ul>
                 </div>
@@ -589,11 +590,16 @@ export default function Home() {
                   </div>
                   <ul className="timeline-details">
                     <li>
-                      Designed and operated high-traffic web infrastructure, ensuring scalability
+                      Owned high-traffic web infrastructure architecture, ensuring scalability
                       and reliability for consumer-facing applications.
                     </li>
-                    <li>Implemented basic DDoS mitigation and system hardening.</li>
-                    <li>Managed on-premises mail and directory services.</li>
+                    <li>
+                      Established DDoS mitigation and system hardening standards for web
+                      infrastructure.
+                    </li>
+                    <li>
+                      Governed on-premises mail and directory services architecture and operations.
+                    </li>
                   </ul>
                 </div>
               </div>
