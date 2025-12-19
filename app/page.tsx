@@ -268,16 +268,9 @@ export default function Home() {
             <h2 className="skills-title">PROFESSIONAL SUMMARY</h2>
             <div className="professional-summary">
               <div className="summary-line">
-                DevOps Manager and Platform Architect with 10+ years of experience designing,
-                operating, and governing secure, highly available, large-scale infrastructure
-                platforms. Strong expertise in DevSecOps, Kubernetes, Anycast networking, CI/CD
-                governance, and enterprise cloud security.
-              </div>
-              <div className="summary-line" style={{ marginTop: '1rem' }}>
-                Proven leader in building enterprise-grade platforms supporting high-traffic,
-                multi-region workloads and strict compliance requirements (ISO 27001, SOX, SOC 2).
-                Experienced in leading DevOps teams, defining secure-by-design delivery standards,
-                and aligning engineering, security, and compliance stakeholders.
+                DevOps Manager with 10+ years of experience leading secure, scalable platforms across
+                cloud and on-prem environments, specializing in DevSecOps governance, Kubernetes
+                platforms, Anycast-based security, and enterprise identity & compliance.
               </div>
             </div>
           </section>
@@ -453,6 +446,10 @@ export default function Home() {
                       delivery.
                     </li>
                     <li>
+                      Acted as the primary technical decision-maker for platform, security, and
+                      delivery standards across multiple product teams.
+                    </li>
+                    <li>
                       Architected and governed Kubernetes-based platforms (on-prem and cloud) using
                       security-by-design and platform engineering principles.
                     </li>
@@ -616,6 +613,10 @@ export default function Home() {
                   <div className="project-role">Architect / DevSecOps Lead</div>
                 </div>
                 <ul className="project-details">
+                  <li>
+                    Provided a centralized, reusable security platform for protecting
+                    internet-facing enterprise applications at scale
+                  </li>
                   <li>
                     Owned the end-to-end architecture of a multi-node, multi-region Anycast WAF
                     platform designed to protect high-traffic, internet-facing applications
