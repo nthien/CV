@@ -320,31 +320,25 @@ export default function Home() {
 
             <div style={{ marginBottom: '2rem' }}>
               <h3 style={{ color: 'var(--terminal-green-bright)', marginBottom: '1rem', fontSize: '1.1rem' }}>
-                Cloud & Container Platforms
+                Kubernetes Platform Engineering
               </h3>
               <div className="skills-grid">
                 <div className="skill-item">
-                  <div className="skill-name">Kubernetes (On-prem & Cloud)</div>
+                  <div className="skill-name">Platform Architecture & Governance</div>
                   <div className="skill-bar-container">
                     <div className="skill-bar" style={{ width: '98%' }}></div>
                   </div>
                 </div>
                 <div className="skill-item">
-                  <div className="skill-name">Docker, Helm, ArgoCD</div>
+                  <div className="skill-name">Multi-Cloud & On-Prem Platform Strategy</div>
                   <div className="skill-bar-container">
                     <div className="skill-bar" style={{ width: '95%' }}></div>
                   </div>
                 </div>
                 <div className="skill-item">
-                  <div className="skill-name">AWS (EKS, ECR, ALB, S3, CloudFront)</div>
+                  <div className="skill-name">Container Orchestration & Workload Management</div>
                   <div className="skill-bar-container">
                     <div className="skill-bar" style={{ width: '95%' }}></div>
-                  </div>
-                </div>
-                <div className="skill-item">
-                  <div className="skill-name">VNG Cloud</div>
-                  <div className="skill-bar-container">
-                    <div className="skill-bar" style={{ width: '90%' }}></div>
                   </div>
                 </div>
               </div>
@@ -352,63 +346,25 @@ export default function Home() {
 
             <div style={{ marginBottom: '2rem' }}>
               <h3 style={{ color: 'var(--terminal-green-bright)', marginBottom: '1rem', fontSize: '1.1rem' }}>
-                CI/CD & Automation
+                Anycast Networking & Application Security
               </h3>
               <div className="skills-grid">
                 <div className="skill-item">
-                  <div className="skill-name">GitLab CI / GitLab Runner</div>
+                  <div className="skill-name">Anycast Architecture & Global Traffic Management</div>
                   <div className="skill-bar-container">
                     <div className="skill-bar" style={{ width: '95%' }}></div>
                   </div>
                 </div>
                 <div className="skill-item">
-                  <div className="skill-name">Jenkins</div>
-                  <div className="skill-bar-container">
-                    <div className="skill-bar" style={{ width: '90%' }}></div>
-                  </div>
-                </div>
-                <div className="skill-item">
-                  <div className="skill-name">GitHub Actions</div>
-                  <div className="skill-bar-container">
-                    <div className="skill-bar" style={{ width: '92%' }}></div>
-                  </div>
-                </div>
-                <div className="skill-item">
-                  <div className="skill-name">SonarQube, Artifact Management</div>
-                  <div className="skill-bar-container">
-                    <div className="skill-bar" style={{ width: '88%' }}></div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div style={{ marginBottom: '2rem' }}>
-              <h3 style={{ color: 'var(--terminal-green-bright)', marginBottom: '1rem', fontSize: '1.1rem' }}>
-                Security & Networking
-              </h3>
-              <div className="skills-grid">
-                <div className="skill-item">
-                  <div className="skill-name">Anycast Architecture</div>
-                  <div className="skill-bar-container">
-                    <div className="skill-bar" style={{ width: '95%' }}></div>
-                  </div>
-                </div>
-                <div className="skill-item">
-                  <div className="skill-name">vWAF, DDoS Protection</div>
+                  <div className="skill-name">WAF & DDoS Protection Strategy</div>
                   <div className="skill-bar-container">
                     <div className="skill-bar" style={{ width: '93%' }}></div>
                   </div>
                 </div>
                 <div className="skill-item">
-                  <div className="skill-name">Nginx, HAProxy, APISIX</div>
+                  <div className="skill-name">Application Security & Threat Mitigation</div>
                   <div className="skill-bar-container">
                     <div className="skill-bar" style={{ width: '92%' }}></div>
-                  </div>
-                </div>
-                <div className="skill-item">
-                  <div className="skill-name">OAuth2, JWT, Zero Trust</div>
-                  <div className="skill-bar-container">
-                    <div className="skill-bar" style={{ width: '90%' }}></div>
                   </div>
                 </div>
               </div>
@@ -416,59 +372,64 @@ export default function Home() {
 
             <div style={{ marginBottom: '2rem' }}>
               <h3 style={{ color: 'var(--terminal-green-bright)', marginBottom: '1rem', fontSize: '1.1rem' }}>
-                Observability & Reliability
+                Cloud & Identity Security (Zero Trust)
               </h3>
               <div className="skills-grid">
                 <div className="skill-item">
-                  <div className="skill-name">Prometheus, Grafana, Loki, Tempo</div>
+                  <div className="skill-name">Enterprise Identity & Access Governance</div>
                   <div className="skill-bar-container">
-                    <div className="skill-bar" style={{ width: '95%' }}></div>
+                    <div className="skill-bar" style={{ width: '90%' }}></div>
                   </div>
                 </div>
                 <div className="skill-item">
-                  <div className="skill-name">SLO / SLA Management</div>
+                  <div className="skill-name">Zero Trust Architecture & Policy Enforcement</div>
+                  <div className="skill-bar-container">
+                    <div className="skill-bar" style={{ width: '90%' }}></div>
+                  </div>
+                </div>
+                <div className="skill-item">
+                  <div className="skill-name">Cloud Security Posture & Compliance</div>
                   <div className="skill-bar-container">
                     <div className="skill-bar" style={{ width: '88%' }}></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div style={{ marginBottom: '2rem' }}>
+              <h3 style={{ color: 'var(--terminal-green-bright)', marginBottom: '1rem', fontSize: '1.1rem' }}>
+                Observability & Reliability Engineering
+              </h3>
+              <div className="skills-grid">
+                <div className="skill-item">
+                  <div className="skill-name">SLO / SLA Management & Service Reliability</div>
+                  <div className="skill-bar-container">
+                    <div className="skill-bar" style={{ width: '95%' }}></div>
                   </div>
                 </div>
                 <div className="skill-item">
                   <div className="skill-name">Performance & Capacity Planning</div>
                   <div className="skill-bar-container">
+                    <div className="skill-bar" style={{ width: '88%' }}></div>
+                  </div>
+                </div>
+                <div className="skill-item">
+                  <div className="skill-name">Distributed Systems Observability</div>
+                  <div className="skill-bar-container">
                     <div className="skill-bar" style={{ width: '90%' }}></div>
                   </div>
                 </div>
               </div>
             </div>
 
-            <div>
-              <h3 style={{ color: 'var(--terminal-green-bright)', marginBottom: '1rem', fontSize: '1.1rem' }}>
-                Data & Messaging
+            <div style={{ marginTop: '3rem', paddingTop: '2rem', borderTop: '1px solid var(--terminal-border)' }}>
+              <h3 style={{ color: 'var(--terminal-green)', marginBottom: '1rem', fontSize: '0.95rem', opacity: 0.8 }}>
+                Tools & Technologies
               </h3>
-              <div className="skills-grid">
-                <div className="skill-item">
-                  <div className="skill-name">PostgreSQL (HA with Patroni)</div>
-                  <div className="skill-bar-container">
-                    <div className="skill-bar" style={{ width: '95%' }}></div>
-                  </div>
-                </div>
-                <div className="skill-item">
-                  <div className="skill-name">MySQL (Multi-master)</div>
-                  <div className="skill-bar-container">
-                    <div className="skill-bar" style={{ width: '90%' }}></div>
-                  </div>
-                </div>
-                <div className="skill-item">
-                  <div className="skill-name">Redis</div>
-                  <div className="skill-bar-container">
-                    <div className="skill-bar" style={{ width: '92%' }}></div>
-                  </div>
-                </div>
-                <div className="skill-item">
-                  <div className="skill-name">Apache Kafka, Amazon SQS</div>
-                  <div className="skill-bar-container">
-                    <div className="skill-bar" style={{ width: '93%' }}></div>
-                  </div>
-                </div>
+              <div style={{ color: 'var(--terminal-text)', fontSize: '0.9rem', lineHeight: '1.6' }}>
+                Kubernetes, Docker, Helm, ArgoCD, GitLab CI, Jenkins, GitHub Actions, AWS, VNG Cloud, 
+                HAProxy, Nginx, APISIX, Prometheus, Grafana, Loki, Tempo, PostgreSQL, MySQL, Redis, 
+                Kafka, Azure AD / Entra ID, Microsoft 365, SonarQube
               </div>
             </div>
           </section>
@@ -496,9 +457,8 @@ export default function Home() {
                       security-by-design and platform engineering principles.
                     </li>
                     <li>
-                      Designed and operated a unified CI/CD & GitOps ecosystem (GitLab Runner,
-                      ArgoCD, Jenkins) with embedded security controls, approval workflows, and
-                      environment governance.
+                      Owned the CI/CD and GitOps standards for Kubernetes-based platforms, with
+                      embedded security controls, approval workflows, and environment governance.
                     </li>
                     <li>
                       Integrated DevSecOps practices into delivery pipelines, including code quality
@@ -511,9 +471,9 @@ export default function Home() {
                       workloads.
                     </li>
                     <li>
-                      Built centralized observability and security monitoring using Prometheus,
-                      Grafana, and Loki, enabling proactive detection of reliability and security
-                      risks.
+                      Established centralized observability and security monitoring capabilities,
+                      enabling proactive detection of reliability and security risks across
+                      enterprise platforms.
                     </li>
                     <li>
                       Collaborated closely with security, audit, and compliance teams to support ISO
@@ -546,8 +506,9 @@ export default function Home() {
                       focusing on secure deployments, auditability, and operational consistency.
                     </li>
                     <li>
-                      Designed and operated high-availability database platforms, including
-                      PostgreSQL (Patroni) and MySQL multi-master architectures.
+                      Owned high-availability database platform architecture and operations,
+                      ensuring data resilience and operational continuity for mission-critical
+                      workloads.
                     </li>
                     <li>
                       Containerized enterprise systems using standardized, security-hardened images
@@ -628,7 +589,8 @@ export default function Home() {
                   </div>
                   <ul className="timeline-details">
                     <li>
-                      Designed and operated high-traffic web infrastructure using Linux and Nginx.
+                      Designed and operated high-traffic web infrastructure, ensuring scalability
+                      and reliability for consumer-facing applications.
                     </li>
                     <li>Implemented basic DDoS mitigation and system hardening.</li>
                     <li>Managed on-premises mail and directory services.</li>
@@ -647,26 +609,18 @@ export default function Home() {
                   <div className="project-name">Virtual WAF (vWAF) Anycast Platform</div>
                   <div className="project-role">Architect / DevSecOps Lead</div>
                 </div>
-                <div className="project-tech">
-                  Anycast Architecture, Multi-Node, Multi-Region, DDoS Protection, Bot Mitigation
-                </div>
                 <ul className="project-details">
                   <li>
-                    Designed and built a vWAF platform using Anycast architecture, operating across
-                    multiple nodes and multiple regions
+                    Owned the end-to-end architecture of a multi-node, multi-region Anycast WAF
+                    platform designed to protect high-traffic, internet-facing applications
                   </li>
                   <li>
-                    Engineered to handle large-scale traffic volumes with high availability and fault
-                    tolerance
+                    Defined security capabilities including HTTP Flood DDoS protection, bot
+                    mitigation, intelligent semantic analysis, and rule-based threat detection
                   </li>
                   <li>
-                    Implemented advanced protection mechanisms: HTTP Flood DDoS Protection, Bot
-                    Detection & Mitigation, Intelligent Semantic Analysis Detection, Rule-Based Cyber
-                    Threat Protection
-                  </li>
-                  <li>
-                    Automated free SSL/TLS certificate issuance (ACME-based) for resilient, scalable
-                    security layer
+                    Established automated certificate lifecycle management for large-scale domains,
+                    delivering a resilient security layer capable of sustaining large traffic volumes
                   </li>
                 </ul>
               </div>
@@ -678,29 +632,24 @@ export default function Home() {
                   </div>
                   <div className="project-role">Architect / DevSecOps Lead</div>
                 </div>
-                <div className="project-tech">
-                  Microsoft 365, Azure AD / Entra ID, Zero Trust, Identity Lifecycle Management
-                </div>
                 <ul className="project-details">
                   <li>
-                    Led enterprise-scale migration from Google Workspace to Microsoft 365, covering
-                    mailbox migration and Google Drive → OneDrive / SharePoint data migration
+                    Led enterprise-wide migration of email and collaboration services from Google
+                    Workspace to Microsoft 365 with minimal business disruption
                   </li>
                   <li>
-                    Designed and implemented Microsoft Entra ID (Azure AD) synchronization with
-                    enterprise HR system, enabling centralized identity lifecycle management
+                    Owned identity architecture design using Microsoft Entra ID synchronized with
+                    the HR system, enabling centralized identity lifecycle management
                   </li>
                   <li>
-                    Established Zero Trust identity architecture, including Conditional Access
-                    policies, MFA enforcement, and RBAC
+                    Established joiner/mover/leaver automation and identity lifecycle governance
                   </li>
                   <li>
-                    Hardened Microsoft 365 and Azure security posture using tenant-level security
-                    baselines and identity protection controls
+                    Defined Zero Trust access policies including MFA, Conditional Access, and RBAC
                   </li>
                   <li>
-                    Coordinated with IT, security, and business stakeholders to ensure minimal
-                    disruption, data integrity, and audit readiness
+                    Hardened Microsoft 365 and Azure tenant security posture to meet enterprise
+                    security standards
                   </li>
                 </ul>
               </div>
@@ -710,19 +659,21 @@ export default function Home() {
                   <div className="project-name">Dcorp (F&B Platform) – Freelance</div>
                   <div className="project-role">Architect / DevOps</div>
                 </div>
-                <div className="project-tech">
-                  Kubernetes, APISIX, Keycloak, MySQL, PostgreSQL, Kafka, Redis, GitLab Runner
-                </div>
                 <ul className="project-details">
                   <li>
-                    Designed and deployed a Kubernetes-based application platform for F&B operations
+                    Architected and delivered a cloud-native application platform for F&B operations,
+                    ensuring scalability and reliability
                   </li>
                   <li>
-                    Integrated API Gateway (APISIX) and centralized authentication via Keycloak
+                    Owned platform architecture including API gateway integration and centralized
+                    authentication services
                   </li>
-                  <li>Built secure CI/CD pipelines and high-availability database clusters</li>
                   <li>
-                    Ensured platform reliability through monitoring and auto-scaling strategies
+                    Established secure CI/CD standards and high-availability database architecture
+                  </li>
+                  <li>
+                    Defined observability and auto-scaling strategies to ensure platform reliability
+                    and performance
                   </li>
                 </ul>
               </div>
@@ -732,20 +683,22 @@ export default function Home() {
                   <div className="project-name">Payment System – U.S. Nails Chain – Freelance</div>
                   <div className="project-role">Architect / DevOps</div>
                 </div>
-                <div className="project-tech">
-                  AWS EKS, Kafka, Redis, PostgreSQL, GitHub Actions, Grafana Tempo
-                </div>
                 <ul className="project-details">
                   <li>
-                    Architected a cloud-native payment processing system on AWS
-                  </li>
-                  <li>Designed event-driven transaction processing using Kafka</li>
-                  <li>
-                    Implemented CI/CD pipelines with governance and observability
+                    Architected a cloud-native payment processing system, ensuring security,
+                    compliance, and scalability for financial transactions
                   </li>
                   <li>
-                    Achieved high availability through load balancing, auto-scaling, and distributed
-                    tracing
+                    Owned event-driven architecture design for transaction processing, enabling
+                    high-throughput and fault-tolerant operations
+                  </li>
+                  <li>
+                    Established CI/CD governance and observability standards, ensuring delivery
+                    confidence and operational visibility
+                  </li>
+                  <li>
+                    Delivered high-availability platform architecture with load balancing,
+                    auto-scaling, and distributed tracing capabilities
                   </li>
                 </ul>
               </div>
